@@ -54,7 +54,7 @@ html {
   width: device-width;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, header, hgroup, main, nav, section {
   display: block;
 }
 
@@ -8992,6 +8992,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
   body {
     min-width: 992px !important;
+    background-image: url("img/bg.jpg");
+    background-attachment: fixed;
   }
   .container {
     min-width: 992px !important;
