@@ -67,6 +67,8 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  background-image: url("src/img/bg-img.png");
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
@@ -594,6 +596,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  opacity: 0.5;
 }
 
 .no-gutters {
@@ -8992,7 +8995,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
   body {
     min-width: 992px !important;
-    background-image: url("img/bg.jpg");
     background-attachment: fixed;
   }
   .container {
