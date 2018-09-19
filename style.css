@@ -123,6 +123,8 @@ body{
 
 #search1 {
   position: relative;
+  justify-content: center;
+  display: flex;
 }
 
 a {
@@ -175,12 +177,14 @@ input::-webkit-input-placeholder {
 #mainsearch input[type=search]:hover {
   background-color: #fff;
   opacity: 0.5;
+  
 }
 
 #mainsearch input[type=search]:focus {
   width: 300px;
   color: #0D2589;
   cursor: auto;
+  border-radius: 10px;
   background: aliceblue url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 330px center;
 }
 

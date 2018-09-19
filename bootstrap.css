@@ -67,8 +67,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  background-image: url("src/img/bg-img.png");
-  background-size: cover;
+
 }
 
 [tabindex="-1"]:focus {
