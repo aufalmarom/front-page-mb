@@ -4377,11 +4377,15 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
+  margin: 10px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  text-align: center;
+  justify-content: center;
+  max-width: 220px;
 }
 
 .card > hr {
@@ -4475,6 +4479,7 @@ input[type="button"].btn-block {
 .card-img {
   width: 100%;
   border-radius: calc(0.25rem - 1px);
+  justify-content: center;
 }
 
 .card-img-top {

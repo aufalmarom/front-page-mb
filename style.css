@@ -195,3 +195,24 @@ input::-webkit-input-placeholder {
 #mainsearch input::-webkit-input-placeholder {
   color: #0D2589;
 }
+
+.card-container{
+  width: 100%;
+  padding-right: 200px;
+  padding-left: 230px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 15 px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.card-text{
+  color: black;
+}
+
+.card-img{
+  max-width: 220px;
+  max-height: 100px;
+}
