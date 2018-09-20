@@ -165,8 +165,8 @@ input::-webkit-input-placeholder {
   color: transparent;
   cursor: pointer;
   float: right;
-  background: transparent url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 10px center;
-  border: solid 1px #ccc;
+  background: transparent url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 10px center ;
+  border: solid 3px #ccc;
   opacity: 0.5;
   padding: 9px 50px 9px 10px;
   -webkit-transition: all .5s;
@@ -193,7 +193,8 @@ input::-webkit-input-placeholder {
 }
 
 #mainsearch input::-webkit-input-placeholder {
-  color: #0D2589;
+  color: black;
+  border: #333;
 }
 
 .card-container{
@@ -217,3 +218,4 @@ input::-webkit-input-placeholder {
   max-width: 220px;
   max-height: 100px;
 }
+
