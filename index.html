@@ -7,10 +7,29 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       
     <title>Manggarai Barat</title>
 </head>
 <body>
+
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Selamat Datang Manggarai Barat</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>              
+            </div>
+            
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+
   <div class="App"> 
   
     <!-- background music autoplay and loop -->
@@ -31,12 +50,14 @@
     <div class="container">
       <h1 class="judul">E-Government</h1>
       <h2 class="judul">Kabupaten Manggarai Barat</h2>
-        <div id="search1" >
-          <form id="mainsearch" >
-            <input type="search" placeholder="      silahkan cari di sini :)">
+        <div id="search1">
+          <form id="mainsearch">
+            <input type="search" name="search" placeholder="      silahkan cari di sini :)">
           </form>
         </div>
     </div>
+
+    
 
     <!-- card -->
     <div class="card-container">
@@ -160,6 +181,16 @@
       </div>
 
     </div>
+
+     <!-- footer with link popup -->
+     <footer class="footer1">
+        <a style="color:aliceblue;">&copy; Copyright</a>
+          <ul>
+            <a href="#popup1"> <li>Kebijakan Privasi</li> </a>
+            <li>||</li>
+            <a href="#popup2"> <li>Tentang Aplikasi</li> </a>
+          </ul>
+      </footer>
 
     <div id="popup3" class="overlay">
       <div class="popup">
@@ -355,21 +386,23 @@
                   <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
                   <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
                   <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
                 </div>
             </div>
           </div>
 
            
       
-    <!-- footer with link popup -->
-    <footer class="footer1">
-      <a style="color:aliceblue;">&copy; Copyright</a>
-        <ul>
-          <a href="#popup1"> <li>Kebijakan Privasi</li> </a>
-          <li>||</li>
-          <a href="#popup2"> <li>Tentang Aplikasi</li> </a>
-        </ul>
-    </footer>
+   
 
     <div id="popup1" class="overlay">
       <div class="popup">
@@ -391,6 +424,10 @@
         </div>
       </div>
     </div>
+
+    <script>
+      $('#modal').modal('show');
+    </script>
 
   </div>
 
