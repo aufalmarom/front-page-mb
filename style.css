@@ -60,12 +60,17 @@
   
   .popup {
     margin: 70px auto;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     width: 50%;
     position: relative;
     transition: all 5s ease-in-out;
+    display: block !important;
+    overflow-y: auto;
+    
   }
   
   .popup h2 {
@@ -91,7 +96,7 @@
     color: #06D85F;
   }
   .popup .content {
-    max-height: 30%;
+    max-height: 500px;
     overflow: auto;
   }
   
