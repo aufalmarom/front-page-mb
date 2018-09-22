@@ -5430,13 +5430,10 @@ button.close {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
+
 }
 
 .modal-backdrop {
@@ -5465,9 +5462,9 @@ button.close {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 1px solid #e9ecef;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
+  width: auto;
 }
 
 .modal-header .close {

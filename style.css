@@ -236,3 +236,10 @@ input::-webkit-input-placeholder {
   max-height: 100px;
 }
 
+.modal-transparent{
+  background: transparent;
+}
+
+.modal-transparent .modal-content{
+  background: transparent;
+}
