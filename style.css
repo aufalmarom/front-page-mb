@@ -71,7 +71,11 @@
   .popup h2 {
     margin-top: 0;
     color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: 'Nexa';
+    src: url('fonts/nexa-bold.eot');
+    src: url('fonts/nexa-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/nexa-bold.woff') format('woff'),
+         url('fonts/nexa-bold.ttf') format('truetype');
   }
   .popup .close {
     position: absolute;
@@ -115,7 +119,11 @@ body{
 
 .judul{
   padding-top: 15px;
-  font-family: sans-serif;
+  font-family: 'Nexa';
+  src: url('fonts/nexa-thin.eot');
+  src: url('fonts/nexa-thin.eot?#iefix') format('embedded-opentype'),
+       url('fonts/nexa-thin.woff') format('woff'),
+       url('fonts/nexa-thin.ttf') format('truetype');
   text-align: center;
   color: aliceblue;
 }
@@ -141,7 +149,11 @@ input {
 }
 
 input[type=search] {
-  font-family: sans-serif;
+  font-family: 'Nexa';
+  src: url('fonts/nexa-thin.eot');
+  src: url('fonts/nexa-thin.eot?#iefix') format('embedded-opentype'),
+       url('fonts/nexa-thin.woff') format('woff'),
+       url('fonts/nexa-thin.ttf') format('truetype');
   font-size: 100%;
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
