@@ -243,3 +243,7 @@ input::-webkit-input-placeholder {
 .modal-transparent .modal-content{
   background: transparent;
 }
+
+.content{
+  text-align: justify;
+}

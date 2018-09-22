@@ -11,23 +11,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       
     <title>Manggarai Barat</title>
+
 </head>
 <body>
-
-    <div id="modal" class="modal modal-transparent fade" tabindex="-1" role="dialog" >
-        <div class="modal-dialog" role="document"  >
-          <div class="modal-content">
-            <div class="modal-header" >
-              <h4 class="modal-title" ></h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-              <img src="src/img/pop.png">             
-            </div>
-            
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+  <div id="modal" class="modal modal-transparent fade" tabindex="-1" role="dialog" >
+    <div class="modal-dialog" role="document"  >
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h4 class="modal-title" ></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <img src="src/img/pop.png">             
+        </div>
+      </div>
+    </div>
+  </div>
     
 
   <div class="App"> 
@@ -51,10 +50,13 @@
       <h2 class="judul">Kabupaten Manggarai Barat</h2>
         <div id="search1">
           <form id="mainsearch">
-            <input type="search"name="search" placeholder="      silahkan cari di sini :)">
-          </form>
+            
+            <input data-target="#PopUps" type="search"name="search" placeholder="      silahkan cari di sini :)" required>
+          
         </div>
     </div>
+
+    
 
     <!-- card -->
     <div class="card-container">
@@ -179,314 +181,323 @@
 
     </div>
 
-     <!-- footer with link popup -->
-     <footer class="footer1">
-        <a style="color:aliceblue;">&copy; Copyright</a>
-          <ul>
-            <a href="#popup1"> <li>Kebijakan Privasi</li> </a>
-            <li>||</li>
-            <a href="#popup2"> <li>Tentang Aplikasi</li> </a>
-          </ul>
-      </footer>
+    <!-- footer with link popup -->
+    <footer class="footer1">
+      <a style="color:aliceblue;">&copy; Copyright</a>
+        <ul>
+          <a href="#popup1"> <li>Kebijakan Privasi</li> </a>
+          <li>||</li>
+          <a href="#popup2"> <li>Tentang Aplikasi</li> </a>
+        </ul>
+    </footer>
 
-      <div id="popup3" class="overlay">
-          <div class="popup">
-            <h2>Aplikasi Belanja</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>  
-                Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                      Daftar Aplikasi :
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                  </div>
-              </div>
-          </div>
-        </div>
-
-    <div id="popup4" class="overlay">
-        <div class="popup">
-          <h2>Aplikasi Belanja</h2>
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            <p>  
-              Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-              <div class="list-group">
-                  <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                    Daftar Aplikasi :
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                  <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                </div>
-            </div>
+    <!-- Modal Pop Up Hasil Pencarian -->
+    <div id="PopUps" class="overlay">
+      <div class="popup">
+        <h2>Hasil Pencarian</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            hasil searching from db
+          </p>
         </div>
       </div>
+    </div>
 
-      <div id="popup5" class="overlay">
-          <div class="popup">
-            <h2>Aplikasi Belanja</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>  
-                Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                      Daftar Aplikasi :
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                  </div>
+    <div id="popup3" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
               </div>
           </div>
-        </div>
+      </div>
+    </div>
 
-      <div id="popup6" class="overlay">
-          <div class="popup">
-            <h2>Aplikasi Belanja</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>  
-                Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                      Daftar Aplikasi :
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                  </div>
+    <div id="popup4" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
               </div>
           </div>
-        </div>
+      </div>
+    </div>
 
-      <div id="popup7" class="overlay">
-          <div class="popup">
-            <h2>Aplikasi Belanja</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>  
-                Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                      Daftar Aplikasi :
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                  </div>
+    <div id="popup5" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
               </div>
           </div>
-        </div>
+      </div>
+    </div>
 
-      <div id="popup9" class="overlay">
-          <div class="popup">
-            <h2>Aplikasi Belanja</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>  
-                Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                      Daftar Aplikasi :
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                  </div>
+    <div id="popup6" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
               </div>
           </div>
-        </div>
+      </div>
+    </div>
 
-      <div id="popup10" class="overlay">
-          <div class="popup">
-            <h2>Aplikasi Belanja</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>  
-                Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                      Daftar Aplikasi :
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                  </div>
+    <div id="popup7" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
               </div>
           </div>
-        </div>
+      </div>
+    </div>
 
-      <div id="popup11" class="overlay">
-          <div class="popup">
-            <h2>Aplikasi Belanja</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-              <p>  
-                Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                      Daftar Aplikasi :
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                    <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                  </div>
+    <div id="popup9" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
               </div>
           </div>
-        </div>
+      </div>
+    </div>
 
-        <div id="popup12" class="overlay">
-            <div class="popup">
-              <h2>Aplikasi Belanja</h2>
-              <a class="close" href="#">&times;</a>
-              <div class="content">
-                <p>  
-                  Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                  <div class="list-group">
-                      <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                        Daftar Aplikasi :
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    </div>
-                </div>
-            </div>
+    <div id="popup10" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+              </div>
           </div>
+      </div>
+    </div>
 
-          <div id="popup13" class="overlay">
-            <div class="popup">
-              <h2>Aplikasi Belanja</h2>
-              <a class="close" href="#">&times;</a>
-              <div class="content">
-                <p>  
-                  Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                  <div class="list-group">
-                      <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
-                        Daftar Aplikasi :
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
-                      <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
-                    </div>
-                </div>
-            </div>
+    <div id="popup11" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+              </div>
           </div>
+      </div>
+    </div>
 
-           
-      
-   
+    <div id="popup12" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="popup13" class="overlay">
+      <div class="popup">
+        <h2>Aplikasi Belanja</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p>  
+            Aplikasi ini akan berjalan sesuai dengan wkasdlanskfnakjdb asdkjfhak. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" style="color: aliceblue;">
+                  Daftar Aplikasi :
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Desa</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kecamatan</a>
+                <a href="#" class="list-group-item list-group-item-action">Aplikasi Kabupaten</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Aplikasi Provinsi</a>
+              </div>
+          </div>
+      </div>
+    </div>
 
     <div id="popup1" class="overlay">
       <div class="popup">
